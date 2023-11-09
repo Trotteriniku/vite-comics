@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container d-flex align-content-center ">
+        <div class="container d-flex align-content-center p-0 ">
             <p class=" text-light fs-3 fw-bold "> => Content goes Here &lt= </p>
         </div>
     </main>
@@ -29,7 +29,7 @@ main{
     background-color: $black--bg;
 
     div{
-        height: 138px;
+         height: 138px;
     }
 }
 </style>
