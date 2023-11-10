@@ -1,7 +1,7 @@
 <template>
     <footer>
-        <div class="footermenu">
-            <div class="container d-flex justify-content-between p-0 overflow-hidden  ">
+        <div class="footermenu overflow-hidden">
+            <div class="container d-flex justify-content-between p-0   ">
 
             <div class="d-flex gap-5">
                 <div class="me-3 pt-5">
@@ -52,7 +52,7 @@
             </div>
             </div>
 
-            <div class=" overflow-hidden">
+            <div>
                 <img  src="../assets/images/dc-logo-bg.png" alt="dc logo bg">
             </div>
         </div>
@@ -61,12 +61,11 @@
         <div class="container p-0  py-4 d-flex justify-content-between ">
             <button type="button" class="btn btn-outline-primary rounded-0 text-light fw-semibold  ">SIGN-UP NOW!</button>
 
-            <div class="d-flex gap-3">
-                
-                <h5 class=" fw-semibold text-primary d-flex  align-items-end">FOLLOW US</h5>
-
-            
+            <div class="d-flex gap-3   align-items-center ">
+                <h5 class=" fw-semibold text-primary m-0 ">FOLLOW US</h5>
+           
                 <div v-for="photoindex in 5">
+                    
                  <img  :src="'/images/icon'+photoindex+'.png'" alt="profile" > 
                 </div>
                 
