@@ -2,6 +2,7 @@
   <HeaderComponent/>
   <MainComponent/>
   <FooterComponent/>
+
 </template>
 
 <script>
@@ -14,7 +15,8 @@ import FooterComponent from './components/FooterComponent.vue';
     components: {
       HeaderComponent,
       MainComponent,
-      FooterComponent
+      FooterComponent,
+      
     },
     data(){
       return{
