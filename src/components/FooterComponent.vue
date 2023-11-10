@@ -1,10 +1,10 @@
 <template>
     <footer>
-        <div class="container d-flex justify-content-between p-0 overflow-hidden  ">
-            
-            
+        <div class="footermenu">
+            <div class="container d-flex justify-content-between p-0 overflow-hidden  ">
+
             <div class="d-flex gap-5">
-                <div class="me-3 pt-5"> 
+                <div class="me-3 pt-5">
                 <h3 class="text-light fw-semibold ">DC COMICS</h3>
                 <ul class=" list-unstyled ">
                     <li><a href="" class=" text-secondary text-decoration-none ">link</a></li>
@@ -51,12 +51,26 @@
                 </ul>
             </div>
             </div>
-            
+
             <div class=" overflow-hidden">
                 <img  src="../assets/images/dc-logo-bg.png" alt="dc logo bg">
             </div>
+        </div>
+        </div>
+
+        <div class="container p-0  py-4 d-flex justify-content-between ">
+            <button type="button" class="btn btn-outline-primary rounded-0 text-light fw-semibold  ">SIGN-UP NOW!</button>
+
+            <div class="d-flex gap-3">
+                
+                <h5 class=" fw-semibold text-primary d-flex  align-items-end">FOLLOW US</h5>
 
             
+                <div v-for="photoindex in 5">
+                 <img  :src="'/images/icon'+photoindex+'.png'" alt="profile" > 
+                </div>
+                
+            </div>
         </div>
     </footer>
 </template>
@@ -65,7 +79,7 @@
     export default {
     name: 'FooterComponent',
     components : {
-       
+
     },
     data(){
         return{
@@ -74,12 +88,15 @@
     },
     methods:{
 
-    }   
+    }
     }
 </script>
 
 <style lang="scss" scoped>
-    footer{
+@use '../assets/variabiles' as *;
+footer{
+    background-color: $grey--bg-footer;
+    .footermenu{
         max-height: 450px;
         background-image: url(../assets/images/footer-bg.jpg);
         background-size: cover;
@@ -89,6 +106,10 @@
             margin-top: -101px;
             width: 630px;
         }
-        
+
     }
+
+
+}
+
 </style>

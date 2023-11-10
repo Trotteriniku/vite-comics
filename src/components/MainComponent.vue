@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container d-flex align-content-center p-0 ">
+        <div class="container  p-0 d-flex align-content-center ">
             <p class=" text-light fs-3 fw-bold "> => Content goes Here &lt= </p>
         </div>
     </main>
