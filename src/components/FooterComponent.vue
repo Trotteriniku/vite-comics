@@ -1,5 +1,6 @@
 <template>
     <footer>
+        <IconMenuComponent/>
         <div class="footermenu overflow-hidden">
             <div class="container d-flex justify-content-between p-0   ">
 
@@ -66,7 +67,7 @@
            
                 <div v-for="photoindex in 5">
                     
-                 <img  :src="'/images/icon'+photoindex+'.png'" alt="profile" > 
+                 <img  :src="'/images/social'+photoindex+'.png'" alt="profile" > 
                 </div>
                 
             </div>
@@ -75,11 +76,12 @@
 </template>
 
 <script>
+import IconMenuComponent from './IconMenuComponent.vue';
     export default {
     name: 'FooterComponent',
     components : {
-
-    },
+    IconMenuComponent
+},
     data(){
         return{
 

@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container  p-0 d-flex align-items-center ">
+        <div class="container  py-5   ">
             <p class=" text-light fs-3 fw-bold "> => Content goes Here &lt= </p>
         </div>
     </main>
@@ -27,9 +27,5 @@
 @use '../assets/variabiles' as *;
 main{
     background-color: $black--bg;
-
-    div{
-         height: 138px;
-    }
 }
 </style>
