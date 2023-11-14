@@ -1,7 +1,7 @@
 <template>
     
             
-    <div class="card rounded-0 p-0 border-0 my-3 " style="width: calc(100% / 6 ); ">
+    <div class="card rounded-0 p-0 border-0 my-3  " style="max-width: 250px;" >
         <div class="myimgcard">
             <img :src="thumb" class="card-img-top w-100  " alt="series">
         </div>
@@ -39,10 +39,9 @@
 
         .card{
             background-color: $black--bg;
-            
             .myimgcard{
-                width: 220px;
-                height: 220px;
+                width: 200px;
+                height: 200px;
                 overflow: hidden;
             }
         }

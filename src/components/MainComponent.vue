@@ -3,7 +3,7 @@
         <div class="Myjumbotron"></div>
 
         <div class="container  py-5 px-0 ">
-            <div class=" d-flex flex-wrap " > 
+            <div class="row row-cols-6 " > 
                 <CardComponent
                 v-for="card in cards"
                 :thumb="card.thumb" 
@@ -51,5 +51,7 @@ main{
         height:450px;
     }
     
+   
 }
+
 </style>
